@@ -36,11 +36,8 @@
           <a @click="closeMobileMenu" href="#testimonials" class="text-sm font-medium text-gray-700 hover:text-pink-600">Отзывы</a>
           <a @click="closeMobileMenu" href="#pricing" class="text-sm font-medium text-gray-700 hover:text-pink-600">Цены</a>
           <a @click="closeMobileMenu" href="#contact" class="text-sm font-medium text-gray-700 hover:text-pink-600">Контакты</a>
-          <button class="w-full h-9 items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm border border-gray-200 hover:bg-gray-50">
-            Войти
-          </button>
           <button class="w-full h-9 items-center justify-center rounded-md bg-gradient-to-r from-red-500 to-pink-500 px-4 py-2 text-sm font-medium text-white shadow hover:from-red-600 hover:to-pink-600">
-            Начать
+            <a href="#pricing">Начать</a>
           </button>
         </nav>
       </div>
