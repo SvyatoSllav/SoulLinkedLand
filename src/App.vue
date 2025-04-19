@@ -258,7 +258,8 @@
               <div class="flex flex-col gap-4">
                 <h3 class="text-xl font-bold text-gray-900">Базовый PDF</h3>
                 <div class="flex items-baseline gap-1">
-                  <span class="text-3xl font-bold text-gray-900">499₽</span>
+                  <span class="text-4xl font-bold text-gray-900">499₽</span>
+                  <span class="ml-3 text-2xl font-bold text-gray-400 line-through">799₽</span>
                 </div>
                 <p class="text-gray-500">Идеально для пар, только начинающих свой совместный путь.</p>
                 <ul class="grid gap-2">
@@ -285,7 +286,8 @@
               <div class="flex flex-col gap-4">
                 <h3 class="text-xl font-bold text-gray-900">Полный пакет</h3>
                 <div class="flex items-baseline gap-1">
-                  <span class="text-3xl font-bold text-gray-900">999₽</span>
+                  <span class="text-4xl font-bold text-gray-900">999₽</span>
+                  <span class="ml-3 text-2xl font-bold text-gray-400 line-through">1399₽</span>
                 </div>
                 <p class="text-gray-500">Для пар, стремящихся углубить свою связь.</p>
                 <ul class="grid gap-2">
@@ -313,7 +315,8 @@
               <div class="flex flex-col gap-4">
                 <h3 class="text-xl font-bold text-gray-900">Премиум</h3>
                 <div class="flex items-baseline gap-1">
-                  <span class="text-3xl font-bold text-gray-900">1399₽</span>
+                  <span class="text-4xl font-bold text-gray-900">1399₽</span>
+                  <span class="ml-3 text-2xl font-bold text-gray-400 line-through">1999₽</span>
                 </div>
                 <p class="text-gray-500">Для пар, стремящихся к пожизненному росту вместе.</p>
                 <ul class="grid gap-2">
