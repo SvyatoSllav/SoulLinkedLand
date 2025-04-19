@@ -10,18 +10,15 @@
 
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex gap-6">
-          <a href="#features" class="text-sm font-medium text-gray-700 hover:text-pink-600">Возможности</a>
+          <a href="#features" class="text-sm font-medium text-gray-700 hover:text-pink-600">О нас</a>
           <a href="#testimonials" class="text-sm font-medium text-gray-700 hover:text-pink-600">Отзывы</a>
           <a href="#pricing" class="text-sm font-medium text-gray-700 hover:text-pink-600">Цены</a>
           <a href="#contact" class="text-sm font-medium text-gray-700 hover:text-pink-600">Контакты</a>
         </nav>
 
         <div class="flex items-center gap-4">
-          <button class="hidden md:inline-flex h-9 items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm border border-gray-200 hover:bg-gray-50">
-            Войти
-          </button>
           <button class="hidden md:inline-flex h-9 items-center justify-center rounded-md bg-gradient-to-r from-red-500 to-pink-500 px-4 py-2 text-sm font-medium text-white shadow hover:from-red-600 hover:to-pink-600">
-            Начать
+            <a href="#pricing">Начать</a>
           </button>
 
           <!-- Mobile Menu Button -->
@@ -35,7 +32,7 @@
       <!-- Mobile Navigation -->
       <div v-if="mobileMenuOpen" class="md:hidden border-t">
         <nav class="flex flex-col p-4 space-y-4 bg-white">
-          <a @click="closeMobileMenu" href="#features" class="text-sm font-medium text-gray-700 hover:text-pink-600">Возможности</a>
+          <a @click="closeMobileMenu" href="#features" class="text-sm font-medium text-gray-700 hover:text-pink-600">О нас</a>
           <a @click="closeMobileMenu" href="#testimonials" class="text-sm font-medium text-gray-700 hover:text-pink-600">Отзывы</a>
           <a @click="closeMobileMenu" href="#pricing" class="text-sm font-medium text-gray-700 hover:text-pink-600">Цены</a>
           <a @click="closeMobileMenu" href="#contact" class="text-sm font-medium text-gray-700 hover:text-pink-600">Контакты</a>
@@ -53,7 +50,7 @@
       <!-- Hero Section -->
       <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-br from-pink-50 to-red-50">
         <div class="container mx-auto px-4 md:px-6">
-          <div class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+          <div class="grid gap-6 lg:grid-cols-[1fr] lg:gap-12 xl:grid-cols-[1fr] justify-center">
             <div class="flex flex-col justify-center space-y-4">
               <div class="space-y-2">
                 <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-gray-900">
@@ -65,21 +62,17 @@
               </div>
               <div class="flex flex-col gap-2 min-[400px]:flex-row">
                 <button class="inline-flex h-10 items-center justify-center rounded-md bg-gradient-to-r from-red-500 to-pink-500 px-8 py-2 text-sm font-medium text-white shadow hover:from-red-600 hover:to-pink-600">
-                  Начать путешествие
+                  <a href="#pricing">Начать путешествие</a>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right ml-2 h-4 w-4"><path d="m9 18 6-6-6-6"/></svg>
                 </button>
                 <button class="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 py-2 text-sm font-medium text-gray-900 shadow-sm hover:bg-gray-50">
-                  Узнать больше
+                  <a href="#features">Узнать больше</a>
                 </button>
               </div>
-              <div class="flex items-center space-x-2 text-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2 h-4 w-4 text-pink-500"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
-                <span>7-дневный бесплатный период, без кредитной карты</span>
-              </div>
             </div>
-            <div class="flex items-center justify-center">
-              <img src="https://via.placeholder.com/550x400/FFF0F5/FF69B4?text=Пара+Вместе" alt="Пара вместе" class="rounded-lg object-cover shadow-lg" />
-            </div>
+<!--            <div class="flex items-center justify-center">-->
+<!--&lt;!&ndash;              <img src="./assets/testcouple.jpg" alt="Пара вместе" class="rounded-lg object-cover shadow-lg" />&ndash;&gt;-->
+<!--            </div>-->
           </div>
         </div>
       </section>
@@ -89,7 +82,7 @@
         <div class="container mx-auto px-4 md:px-6">
           <div class="flex flex-col items-center justify-center space-y-4 text-center">
             <div class="space-y-2">
-              <div class="inline-block rounded-lg bg-pink-100 px-3 py-1 text-sm text-pink-600">Возможности</div>
+              <div class="inline-block rounded-lg bg-pink-100 px-3 py-1 text-sm text-pink-600">О нас</div>
               <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight text-gray-900">
                 Создано для углубления вашей связи
               </h2>
@@ -115,9 +108,9 @@
                 <div class="flex h-12 w-12 items-center justify-center rounded-full bg-red-100">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-heart text-red-500"><path d="M21 10V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="M21.29 17.7a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-2.65-.53c-.3.12-.56.3-.79.53-.95.94-1 2.53.2 3.74L17.5 24l3.6-3.55c1.2-1.21 1.14-2.8.19-3.74Z"/></svg>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900">Ежедневные подсказки</h3>
+                <h3 class="text-xl font-bold text-gray-900">Ежедневные методики</h3>
                 <p class="text-gray-500">
-                  Получайте ежедневные подсказки для отношений, чтобы поддерживать разговор и развивать вашу связь.
+                  Получите ежедневные методики для отношений, чтобы поддерживать разговор и развивать вашу связь.
                 </p>
               </div>
             </div>
@@ -128,37 +121,37 @@
                 </div>
                 <h3 class="text-xl font-bold text-gray-900">Дневник отношений</h3>
                 <p class="text-gray-500">
-                  Отслеживайте рост ваших отношений с помощью нашего цифрового дневника, чтобы размышлять о вашем совместном пути.
+                  Отслеживайте рост ваших отношений с помощью цифрового дневника, чтобы размышлять о вашем совместном пути.
                 </p>
               </div>
             </div>
-            <div class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm lg:col-span-3">
-              <div class="flex flex-col md:flex-row gap-6 items-center">
-                <div class="md:w-1/2">
-                  <img src="https://via.placeholder.com/600x400/FFF0F5/FF69B4?text=Превью+Приложения" alt="Приложение SoulLinked" class="rounded-lg shadow-lg" />
-                </div>
-                <div class="md:w-1/2 space-y-4">
-                  <h3 class="text-2xl font-bold text-gray-900">Создано для современных пар</h3>
-                  <p class="text-gray-500">
-                    Независимо от того, только ли вы начинаете или вместе уже десятилетия, SoulLinked предоставляет инструменты, которые помогут вам стать ближе. Наше приложение разработано так, чтобы органично вписаться в вашу жизнь, с вопросами от легких до глубоко значимых.
-                  </p>
-                  <ul class="space-y-2">
-                    <li class="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle h-5 w-5 text-pink-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                      <span>Доступно на iOS и Android</span>
-                    </li>
-                    <li class="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle h-5 w-5 text-pink-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                      <span>Синхронизация на всех устройствах</span>
-                    </li>
-                    <li class="flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle h-5 w-5 text-pink-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                      <span>Новые вопросы добавляются еженедельно</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+<!--            <div class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm lg:col-span-3">-->
+<!--              <div class="flex flex-col md:flex-row gap-6 items-center">-->
+<!--                <div class="md:w-1/2">-->
+<!--                  <img src="https://via.placeholder.com/600x400/FFF0F5/FF69B4?text=Превью+Приложения" alt="Приложение SoulLinked" class="rounded-lg shadow-lg" />-->
+<!--                </div>-->
+<!--                <div class="md:w-1/2 space-y-4">-->
+<!--                  <h3 class="text-2xl font-bold text-gray-900">Создано для современных пар</h3>-->
+<!--                  <p class="text-gray-500">-->
+<!--                    Независимо от того, только ли вы начинаете или вместе уже десятилетия, SoulLinked предоставляет инструменты, которые помогут вам стать ближе. Наше приложение разработано так, чтобы органично вписаться в вашу жизнь, с вопросами от легких до глубоко значимых.-->
+<!--                  </p>-->
+<!--                  <ul class="space-y-2">-->
+<!--                    <li class="flex items-center gap-2">-->
+<!--                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle h-5 w-5 text-pink-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>-->
+<!--                      <span>Доступно на iOS и Android</span>-->
+<!--                    </li>-->
+<!--                    <li class="flex items-center gap-2">-->
+<!--                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle h-5 w-5 text-pink-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>-->
+<!--                      <span>Синхронизация на всех устройствах</span>-->
+<!--                    </li>-->
+<!--                    <li class="flex items-center gap-2">-->
+<!--                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle h-5 w-5 text-pink-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>-->
+<!--                      <span>Новые вопросы добавляются еженедельно</span>-->
+<!--                    </li>-->
+<!--                  </ul>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
           </div>
         </div>
       </section>
@@ -170,7 +163,7 @@
             <div class="space-y-2">
               <div class="inline-block rounded-lg bg-pink-100 px-3 py-1 text-sm text-pink-600">Отзывы</div>
               <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight text-gray-900">
-                Любимо парами повсюду
+                Нас любят
               </h2>
               <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl">
                 Послушайте пары, которые преобразили свои отношения с SoulLinked.
@@ -188,10 +181,10 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#FFC107" stroke="none"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 </div>
                 <blockquote class="text-lg font-semibold text-gray-900">
-                  "SoulLinked полностью преобразило наши отношения. Мы открыли для себя вещи друг о друге, о которых не знали после 5 лет совместной жизни!"
+                  "Этот сборник полностью преобразил наши отношения. Мы открыли для себя вещи друг о друге, о которых не знали после 5 лет совместной жизни!"
                 </blockquote>
                 <div class="flex items-center gap-4">
-                  <img src="https://via.placeholder.com/40x40/FFF0F5/FF69B4?text=Ю" alt="Аватар" class="h-10 w-10 rounded-full" />
+                  <img src="./assets/couple1.png" alt="Аватар" class="h-10 w-10 rounded-full" />
                   <div>
                     <div class="font-medium text-gray-900">Юлия и Максим</div>
                     <div class="text-sm text-gray-500">Вместе 5 лет</div>
@@ -209,10 +202,10 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#FFC107" stroke="none"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 </div>
                 <blockquote class="text-lg font-semibold text-gray-900">
-                  "Ежедневные подсказки стали нашей любимой частью дня. Это как маленький импульс для отношений каждое утро!"
+                  "Ежедневные упражнения на сближения стали нашей любимой частью дня. Это как маленький импульс для отношений каждое утро!"
                 </blockquote>
                 <div class="flex items-center gap-4">
-                  <img src="https://via.placeholder.com/40x40/FFF0F5/FF69B4?text=А" alt="Аватар" class="h-10 w-10 rounded-full" />
+                  <img src="./assets/couple2.png" alt="Аватар" class="h-10 w-10 rounded-full" />
                   <div>
                     <div class="font-medium text-gray-900">Алексей и Яна</div>
                     <div class="text-sm text-gray-500">Вместе 2 года</div>
@@ -230,10 +223,10 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#FFC107" stroke="none"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 </div>
                 <blockquote class="text-lg font-semibold text-gray-900">
-                  "После 15 лет брака мы думали, что знаем друг о друге всё. SoulLinked доказало, что мы чудесно ошибались!"
+                  "После 15 лет брака мы думали, что знаем друг о друге всё. Такая коллекция вопросов доказала, что мы чудесно ошибались!"
                 </blockquote>
                 <div class="flex items-center gap-4">
-                  <img src="https://via.placeholder.com/40x40/FFF0F5/FF69B4?text=Р" alt="Аватар" class="h-10 w-10 rounded-full" />
+                  <img src="./assets/couple3.png" alt="Аватар" class="h-10 w-10 rounded-full" />
                   <div>
                     <div class="font-medium text-gray-900">Роман и Мария</div>
                     <div class="text-sm text-gray-500">В браке 15 лет</div>
@@ -255,7 +248,7 @@
                 Простые, прозрачные цены
               </h2>
               <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl">
-                Выберите план, который подходит для вашего пути отношений. Все планы включают 7-дневный бесплатный период.
+                Выберите план, который подходит для вашего пути отношений.
               </p>
             </div>
           </div>
@@ -279,7 +272,7 @@
                   </li>
                 </ul>
               </div>
-              <button class="mt-auto inline-flex h-10 items-center justify-center rounded-md bg-gradient-to-r from-red-500 to-pink-500 px-8 py-2 text-sm font-medium text-white shadow hover:from-red-600 hover:to-pink-600 w-full">
+              <button @click="buyPDF(1)" class="mt-auto inline-flex h-10 items-center justify-center rounded-md bg-gradient-to-r from-red-500 to-pink-500 px-8 py-2 text-sm font-medium text-white shadow hover:from-red-600 hover:to-pink-600 w-full">
                 Купить
               </button>
             </div>
@@ -292,7 +285,7 @@
               <div class="flex flex-col gap-4">
                 <h3 class="text-xl font-bold text-gray-900">Полный пакет</h3>
                 <div class="flex items-baseline gap-1">
-                  <span class="text-3xl font-bold text-gray-900">1399₽</span>
+                  <span class="text-3xl font-bold text-gray-900">999₽</span>
                 </div>
                 <p class="text-gray-500">Для пар, стремящихся углубить свою связь.</p>
                 <ul class="grid gap-2">
@@ -310,7 +303,7 @@
                   </li>
                 </ul>
               </div>
-              <button class="inline-flex h-10 items-center justify-center rounded-md bg-gradient-to-r from-red-500 to-pink-500 px-8 py-2 text-sm font-medium text-white shadow hover:from-red-600 hover:to-pink-600 w-full">
+              <button @click="buyPDF(2)" class="inline-flex h-10 items-center justify-center rounded-md bg-gradient-to-r from-red-500 to-pink-500 px-8 py-2 text-sm font-medium text-white shadow hover:from-red-600 hover:to-pink-600 w-full">
                 Купить
               </button>
             </div>
@@ -320,7 +313,7 @@
               <div class="flex flex-col gap-4">
                 <h3 class="text-xl font-bold text-gray-900">Премиум</h3>
                 <div class="flex items-baseline gap-1">
-                  <span class="text-3xl font-bold text-gray-900">1799₽</span>
+                  <span class="text-3xl font-bold text-gray-900">1399₽</span>
                 </div>
                 <p class="text-gray-500">Для пар, стремящихся к пожизненному росту вместе.</p>
                 <ul class="grid gap-2">
@@ -330,7 +323,7 @@
                   </li>
                   <li class="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle h-5 w-5 text-pink-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                    <span>1000+ вопросов для отношений</span>
+                    <span>500+ вопросов для отношений</span>
                   </li>
                   <li class="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle h-5 w-5 text-pink-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
@@ -345,7 +338,7 @@
                     <span>Все будущие обновления</span>
                   </li>
                 </ul>
-                <button class="mt-auto inline-flex h-10 items-center justify-center rounded-md bg-gradient-to-r from-red-500 to-pink-500 px-8 py-2 text-sm font-medium text-white shadow hover:from-red-600 hover:to-pink-600 w-full">
+                <button @click="buyPDF(3)" class="mt-auto inline-flex h-10 items-center justify-center rounded-md bg-gradient-to-r from-red-500 to-pink-500 px-8 py-2 text-sm font-medium text-white shadow hover:from-red-600 hover:to-pink-600 w-full">
                   Купить
                 </button>
               </div>
@@ -353,7 +346,363 @@
           </div>
         </div>
       </section>
+
+      <section id="faq" class="w-full py-12 md:py-24 lg:py-32 bg-pink-50">
+        <div class="container mx-auto px-4 md:px-6">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-2">
+              <div class="inline-block rounded-lg bg-pink-100 px-3 py-1 text-sm text-pink-600">Вопросы и ответы</div>
+              <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight text-gray-900">
+                Часто задаваемые вопросы
+              </h2>
+              <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl">
+                Ответы на самые популярные вопросы о нашем сборнике методик для углубления взаимоотношений
+              </p>
+            </div>
+          </div>
+
+          <div class="mx-auto max-w-3xl mt-12">
+            <div class="space-y-4">
+              <!-- FAQ Item 1 -->
+              <div class="rounded-lg border border-gray-200 bg-white">
+                <button
+                    @click="toggleFaq(0)"
+                    class="flex w-full items-center justify-between px-6 py-4 text-left"
+                    :aria-expanded="openFaqs[0]"
+                    aria-controls="faq-0"
+                >
+                  <span class="text-lg font-medium text-gray-900">Как использовать сборник вопросов для укрепления отношений?</span>
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-5 w-5 transition-transform"
+                      :class="{ 'rotate-180': openFaqs[0] }"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div
+                    id="faq-0"
+                    v-show="openFaqs[0]"
+                    class="px-6 pb-4 text-gray-600"
+                >
+                  <p>Наш сборник вопросов разработан для регулярного использования. Выберите удобное время, когда вы и ваш партнер можете спокойно поговорить без отвлечений. Выбирайте по одному вопросу за раз и обсуждайте его глубоко, давая друг другу возможность полностью выразить свои мысли и чувства. Рекомендуется использовать сборник 1-3 раза в неделю для достижения наилучших результатов в укреплении ваших отношений.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="rounded-lg border border-gray-200 bg-white">
+                <button
+                    @click="toggleFaq(1)"
+                    class="flex w-full items-center justify-between px-6 py-4 text-left"
+                    :aria-expanded="openFaqs[1]"
+                    aria-controls="faq-1"
+                >
+                  <span class="text-lg font-medium text-gray-900">Для каких пар подходит этот сборник вопросов?</span>
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-5 w-5 transition-transform"
+                      :class="{ 'rotate-180': openFaqs[1] }"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div
+                    id="faq-1"
+                    v-show="openFaqs[1]"
+                    class="px-6 pb-4 text-gray-600"
+                >
+                  <p>Наш сборник вопросов и методик подходит для пар на любом этапе отношений. Для новых пар это отличный способ глубже узнать друг друга. Для пар, которые вместе уже долгое время, это возможность открыть новые грани отношений и вернуть свежесть чувств. Сборник также полезен для пар, переживающих сложный период, так как помогает восстановить эмоциональную связь и улучшить коммуникацию.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="rounded-lg border border-gray-200 bg-white">
+                <button
+                    @click="toggleFaq(2)"
+                    class="flex w-full items-center justify-between px-6 py-4 text-left"
+                    :aria-expanded="openFaqs[2]"
+                    aria-controls="faq-2"
+                >
+                  <span class="text-lg font-medium text-gray-900">На каких психологических принципах основаны вопросы?</span>
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-5 w-5 transition-transform"
+                      :class="{ 'rotate-180': openFaqs[2] }"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div
+                    id="faq-2"
+                    v-show="openFaqs[2]"
+                    class="px-6 pb-4 text-gray-600"
+                >
+                  <p>Наши вопросы и методики разработаны на основе современных психологических исследований в области отношений и эмоциональной близости. Мы опираемся на работы известных психологов, таких как Джон Готтман, Сью Джонсон и Эстер Перель. Вопросы структурированы по категориям, включая эмоциональную близость, коммуникацию, разрешение конфликтов, интимность, совместные цели и ценности. Каждый вопрос тщательно продуман, чтобы стимулировать глубокие и значимые разговоры.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="rounded-lg border border-gray-200 bg-white">
+                <button
+                    @click="toggleFaq(3)"
+                    class="flex w-full items-center justify-between px-6 py-4 text-left"
+                    :aria-expanded="openFaqs[3]"
+                    aria-controls="faq-3"
+                >
+                  <span class="text-lg font-medium text-gray-900">Какие темы охватывает сборник вопросов?</span>
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-5 w-5 transition-transform"
+                      :class="{ 'rotate-180': openFaqs[3] }"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div
+                    id="faq-3"
+                    v-show="openFaqs[3]"
+                    class="px-6 pb-4 text-gray-600"
+                >
+                  <p>Наш сборник охватывает широкий спектр тем, важных для здоровых и счастливых отношений: детство и формирование личности, мечты и стремления, страхи и уязвимости, любовь и привязанность, интимность и близость, семейные ценности, финансы, карьера и личностный рост, разрешение конфликтов, совместное будущее, хобби и интересы, а также духовность и философия жизни. Вопросы разделены по уровням глубины, от легких до очень глубоких, что позволяет постепенно углублять ваши беседы.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="rounded-lg border border-gray-200 bg-white">
+                <button
+                    @click="toggleFaq(4)"
+                    class="flex w-full items-center justify-between px-6 py-4 text-left"
+                    :aria-expanded="openFaqs[4]"
+                    aria-controls="faq-4"
+                >
+                  <span class="text-lg font-medium text-gray-900">Как часто рекомендуется использовать методики из сборника?</span>
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-5 w-5 transition-transform"
+                      :class="{ 'rotate-180': openFaqs[4] }"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div
+                    id="faq-4"
+                    v-show="openFaqs[4]"
+                    class="px-6 pb-4 text-gray-600"
+                >
+                  <p>Для достижения наилучших результатов мы рекомендуем выделять время для глубоких разговоров 1-3 раза в неделю. Однако важно адаптировать частоту под ваш ритм жизни и потребности отношений. Некоторые пары предпочитают выбирать один вопрос в день за ужином, другие устраивают специальные вечера раз в неделю для более глубоких бесед. Главное — регулярность и искренний интерес к ответам партнера. Помните, что качество разговора важнее количества обсужденных вопросов.</p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div class="rounded-lg border border-gray-200 bg-white">
+                <button
+                    @click="toggleFaq(5)"
+                    class="flex w-full items-center justify-between px-6 py-4 text-left"
+                    :aria-expanded="openFaqs[5]"
+                    aria-controls="faq-5"
+                >
+                  <span class="text-lg font-medium text-gray-900">Что делать, если некоторые вопросы вызывают дискомфорт?</span>
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="h-5 w-5 transition-transform"
+                      :class="{ 'rotate-180': openFaqs[5] }"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div
+                    id="faq-5"
+                    v-show="openFaqs[5]"
+                    class="px-6 pb-4 text-gray-600"
+                >
+                  <p>Это совершенно нормально, если некоторые вопросы вызывают дискомфорт — они и созданы для того, чтобы выводить вас из зоны комфорта и способствовать росту отношений. Однако важно соблюдать границы друг друга. Если вопрос вызывает слишком сильный дискомфорт, вы всегда можете пропустить его и вернуться к нему позже, когда будете готовы. Создайте безопасное пространство для общения, где каждый может честно сказать "я пока не готов обсуждать это". Помните, что рост происходит на границе комфорта и дискомфорта, но не в зоне травмы.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-12 text-center">
+              <p class="text-gray-600">Не нашли ответ на свой вопрос?</p>
+              <a href="#contact-form" class="inline-flex items-center text-pink-600 hover:text-pink-700 mt-2">
+                Свяжитесь с нами
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1 h-4 w-4"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <section id="contact-form" class="w-full py-12 md:py-24 lg:py-32 border-t-1">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="flex flex-col items-center justify-center space-y-4 text-center">
+          <div class="space-y-2">
+            <div class="inline-block rounded-lg bg-pink-100 px-3 py-1 text-sm text-pink-600">Контакты</div>
+            <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight text-gray-900">
+              Свяжитесь с нами
+            </h2>
+            <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl">
+              У вас есть вопросы или предложения? Заполните форму ниже, и мы свяжемся с вами в ближайшее время.
+            </p>
+          </div>
+        </div>
+
+        <div class="mx-auto max-w-2xl mt-12">
+          <form @submit.prevent="submitForm" class="space-y-6">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <div class="space-y-2">
+                <label for="first-name" class="text-sm font-medium text-gray-700">Имя</label>
+                <input
+                    id="first-name"
+                    v-model="contactForm.firstName"
+                    type="text"
+                    required
+                    class="w-full rounded-md border border-gray-300 px-4 py-2 text-gray-900 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                    placeholder="Введите ваше имя"
+                />
+              </div>
+              <div class="space-y-2">
+                <label for="last-name" class="text-sm font-medium text-gray-700">Фамилия</label>
+                <input
+                    id="last-name"
+                    v-model="contactForm.lastName"
+                    type="text"
+                    class="w-full rounded-md border border-gray-300 px-4 py-2 text-gray-900 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                    placeholder="Введите вашу фамилию"
+                />
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <label for="email" class="text-sm font-medium text-gray-700">Электронная почта</label>
+              <input
+                  id="email"
+                  v-model="contactForm.email"
+                  type="email"
+                  required
+                  class="w-full rounded-md border border-gray-300 px-4 py-2 text-gray-900 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                  placeholder="example@mail.ru"
+              />
+            </div>
+
+            <div class="space-y-2">
+              <label for="phone" class="text-sm font-medium text-gray-700">Телефон</label>
+              <input
+                  id="phone"
+                  v-model="contactForm.phone"
+                  type="tel"
+                  class="w-full rounded-md border border-gray-300 px-4 py-2 text-gray-900 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                  placeholder="+7 (999) 123-45-67"
+              />
+            </div>
+
+            <div class="space-y-2">
+              <label for="subject" class="text-sm font-medium text-gray-700">Тема</label>
+              <select
+                  id="subject"
+                  v-model="contactForm.subject"
+                  required
+                  class="w-full rounded-md border border-gray-300 px-4 py-2 text-gray-900 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+              >
+                <option value="" disabled selected>Выберите тему</option>
+                <option value="general">Общий вопрос</option>
+                <option value="support">Техническая поддержка</option>
+                <option value="billing">Вопросы оплаты</option>
+                <option value="partnership">Сотрудничество</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+
+            <div class="space-y-2">
+              <label for="message" class="text-sm font-medium text-gray-700">Сообщение</label>
+              <textarea
+                  id="message"
+                  v-model="contactForm.message"
+                  rows="5"
+                  required
+                  class="w-full rounded-md border border-gray-300 px-4 py-2 text-gray-900 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+                  placeholder="Напишите ваше сообщение здесь..."
+              ></textarea>
+            </div>
+
+            <div class="flex items-center">
+              <input
+                  id="privacy-policy"
+                  v-model="contactForm.privacyPolicy"
+                  type="checkbox"
+                  required
+                  class="h-4 w-4 rounded border-gray-300 text-pink-600 focus:ring-pink-500"
+              />
+              <label for="privacy-policy" class="ml-2 text-sm text-gray-700">
+                Я согласен с <a href="#" class="text-pink-600 hover:underline">политикой конфиденциальности</a>
+              </label>
+            </div>
+
+            <div class="flex justify-center">
+              <button
+                  type="submit"
+                  class="inline-flex h-10 items-center justify-center rounded-md bg-gradient-to-r from-red-500 to-pink-500 px-8 py-2 text-sm font-medium text-white shadow hover:from-red-600 hover:to-pink-600 min-w-[200px]"
+                  :disabled="formSubmitting"
+              >
+                <span v-if="formSubmitting">Отправка...</span>
+                <span v-else>Отправить сообщение</span>
+              </button>
+            </div>
+
+            <div v-if="formSubmitted" class="text-center p-4 rounded-md bg-green-50 text-green-700">
+              Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <footer class="w-full border-t bg-white">
       <div class="container mx-auto flex flex-col gap-8 py-8 md:py-12 lg:py-16 px-4 md:px-6">
@@ -389,7 +738,7 @@
             <h3 class="text-sm font-medium text-gray-900">Продукт</h3>
             <nav class="flex flex-col gap-2">
               <a href="#features" class="text-sm text-gray-500 hover:text-pink-500">
-                Возможности
+                О нас
               </a>
               <a href="#pricing" class="text-sm text-gray-500 hover:text-pink-500">
                 Цены
@@ -453,7 +802,19 @@ export default {
   name: 'SoulTogetherLanding',
   data() {
     return {
-      mobileMenuOpen: false
+      mobileMenuOpen: false,
+      formSubmitting: false,
+      formSubmitted: false,
+      contactForm: {
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+        privacyPolicy: false
+      },
+      openFaqs: [false, false, false, false, false, false], // Array to track open/closed state of FAQs
     }
   },
   methods: {
@@ -462,6 +823,49 @@ export default {
     },
     closeMobileMenu() {
       this.mobileMenuOpen = false
+    },
+    submitForm() {
+      this.formSubmitting = true;
+
+      // Simulate form submission with a timeout
+      setTimeout(() => {
+        this.formSubmitting = false;
+        this.formSubmitted = true;
+
+        // Reset form after submission
+        this.contactForm = {
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: '',
+          privacyPolicy: false
+        };
+
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          this.formSubmitted = false;
+        }, 5000);
+      }, 1500);
+    },
+    toggleFaq(index) {
+      // Create a new array to avoid mutating the original directly
+      const newOpenFaqs = [...this.openFaqs];
+      newOpenFaqs[index] = !newOpenFaqs[index];
+      this.openFaqs = newOpenFaqs;
+    },
+    buyPDF(index) {
+      if (index === 1) {
+        window.open('https://www.digiseller.market/asp2/pay_wm.asp?id_d=5121276&lang=ru-RU', '_blank', 'noopener')
+      }
+      if (index === 2) {
+        window.open('https://www.digiseller.market/asp2/pay_wm.asp?id_d=5121023&lang=ru-RU', '_blank', 'noopener')
+      }
+      if (index === 3) {
+        window.open('https://www.digiseller.market/asp2/pay_wm.asp?id_d=5121280&lang=ru-RU', '_blank', 'noopener')
+      }
+
     }
   }
 }
