@@ -58,10 +58,12 @@
                 </p>
               </div>
               <div class="flex flex-col gap-2 min-[400px]:flex-row">
-                <button class="inline-flex h-10 items-center justify-center rounded-md bg-gradient-to-r from-red-500 to-pink-500 px-8 py-2 text-sm font-medium text-white shadow hover:from-red-600 hover:to-pink-600">
-                  <a href="#pricing">Начать путешествие</a>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right ml-2 h-4 w-4"><path d="m9 18 6-6-6-6"/></svg>
-                </button>
+                <a href="#pricing">
+                  <button class="inline-flex h-10 items-center justify-center rounded-md bg-gradient-to-r from-red-500 to-pink-500 px-8 py-2 text-sm font-medium text-white shadow hover:from-red-600 hover:to-pink-600">
+                    Начать путешествие
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right ml-2 h-4 w-4"><path d="m9 18 6-6-6-6"/></svg>
+                  </button>
+                </a>
                 <button class="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 py-2 text-sm font-medium text-gray-900 shadow-sm hover:bg-gray-50">
                   <a href="#features">Узнать больше</a>
                 </button>
@@ -283,7 +285,7 @@
               <div class="flex flex-col gap-4">
                 <h3 class="text-xl font-bold text-gray-900">Полный пакет</h3>
                 <div class="flex items-baseline gap-1">
-                  <span class="text-4xl font-bold text-gray-900">999₽</span>
+                  <span class="text-4xl font-bold text-gray-900">699₽</span>
                   <span class="ml-3 text-2xl font-bold text-gray-400 line-through">1399₽</span>
                 </div>
                 <p class="text-gray-500">Для пар, стремящихся углубить свою связь.</p>
@@ -312,7 +314,7 @@
               <div class="flex flex-col gap-4">
                 <h3 class="text-xl font-bold text-gray-900">Премиум</h3>
                 <div class="flex items-baseline gap-1">
-                  <span class="text-4xl font-bold text-gray-900">1399₽</span>
+                  <span class="text-4xl font-bold text-gray-900">1199₽</span>
                   <span class="ml-3 text-2xl font-bold text-gray-400 line-through">1999₽</span>
                 </div>
                 <p class="text-gray-500">Для пар, стремящихся к пожизненному росту вместе.</p>
